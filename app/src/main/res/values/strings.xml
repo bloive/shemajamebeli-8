@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Shualeduri</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_matches">Match Preview</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="goal">Goals by</string>
+    <string name="own_goal">Own Goal</string>
+    <string name="yellow_card">Own Goal</string>
+    <string name="substitution">Substitution</string>
+</resources>

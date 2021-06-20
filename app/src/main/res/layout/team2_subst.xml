@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/imgPlayerIn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvMin_ActionType1"
+        app:srcCompat="@drawable/ic_home_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imgPlayerOut"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPlayerOut"
+        app:layout_constraintStart_toStartOf="@+id/imgPlayerIn"
+        app:layout_constraintTop_toTopOf="@+id/imgPlayerIn"
+        app:layout_constraintVertical_bias="0.83"
+        app:srcCompat="@drawable/ic_home_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/tvMin_ActionType1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:text="16' Substitution"
+        android:textColor="@color/grey_primary"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/imgPlayerIn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPlayerIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Messi L."
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvMin_ActionType1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imgAction"
+        app:layout_constraintTop_toBottomOf="@+id/tvMin_ActionType1" />
+
+    <TextView
+        android:id="@+id/tvPlayerOut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Messi L."
+        android:textAlignment="textEnd"
+        android:textColor="@color/grey_primary"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvPlayerIn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvPlayerIn"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlayerIn" />
+
+    <ImageView
+        android:id="@+id/imgAction"
+        android:layout_width="6.8dp"
+        android:layout_height="6.8dp"
+        android:layout_marginStart="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgAction2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/ic_subst_in"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imgAction2"
+        android:layout_width="6.8dp"
+        android:layout_height="6.8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imgAction"
+        app:layout_constraintTop_toBottomOf="@+id/imgAction"
+        app:srcCompat="@drawable/ic_subst_out"
+        tools:ignore="VectorDrawableCompat" />
+</androidx.constraintlayout.widget.ConstraintLayout>
